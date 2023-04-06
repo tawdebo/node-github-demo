@@ -4,4 +4,4 @@ cd ~/public_html/node-github-demo
 git pull origin master
 /home/devops/bin/npm install
 /home/devops/bin/npm build
-/home/devops/bin/pm2 restart node-app
+/home/devops/bin/pm2 restart restart all
