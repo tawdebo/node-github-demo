@@ -44,10 +44,8 @@ jobs:
         # key:  ${{ secrets.SSH_KEY }}
         password: ${{ secrets.SSH_PASSWORD }}
         port: ${{ secrets.SSH_PORT }}
-
-        script: |
-          cd ~/public_html/node-github-demo
-          git pull origin master
+        - run: cd ~/public_html/node-github-demo
+        - run:  git pull origin master
         - run: npm install
         - run: npm build
         - run: pm2 restart node-app
