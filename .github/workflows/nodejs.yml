@@ -47,4 +47,4 @@ jobs:
         script: |
            cd /home/devops/public_html/node-github-demo
            git pull origin master
-           ./moo.sh
+           chmod +x moo.sh && ./moo.sh
